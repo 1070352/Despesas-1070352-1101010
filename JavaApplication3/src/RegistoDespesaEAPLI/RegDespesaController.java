@@ -9,5 +9,10 @@ package RegistoDespesaEAPLI;
  * @author Antonio
  */
 public class RegDespesaController {
-    
+    public boolean RegDespesaint(int Valor, String Desc){
+        while (Valor==0 || Desc==""){
+            return false;
+        }
+        return true;
+    }
 }
