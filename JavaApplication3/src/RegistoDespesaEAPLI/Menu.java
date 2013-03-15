@@ -1,6 +1,6 @@
-package javaapplication3;
+package RegistoDespesaEAPLI;
 
-public class JavaApplication3 {
+public class Menu {
 
     /**
      * @param args the command line arguments
