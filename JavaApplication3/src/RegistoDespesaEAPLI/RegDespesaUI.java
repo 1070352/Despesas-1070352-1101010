@@ -15,7 +15,7 @@ public class RegDespesaUI {
          int val = Integer.parseInt(javax.swing.JOptionPane.showInputDialog(null, "Introduza um valor"));
          String desc = JOptionPane.showInputDialog(null, "Introduza uma descriçao");
          
-         JOptionPane.showInputDialog(null, "Registo Introduzido" + "Nome: " + desc +"Valor:" + val);
+         JOptionPane.showMessageDialog(null, "Registo Introduzido" + "Nome: " + desc +"Valor:" + val);
     }
     
 }

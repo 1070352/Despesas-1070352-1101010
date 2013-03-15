@@ -7,6 +7,7 @@ public class Menu {
     
     public static void main(String[] args) {
          int opcao;
+         RegDespesaUI i = new RegDespesaUI();
          do {  
             opcao = Integer.parseInt(javax.swing.JOptionPane.showInputDialog("" +  
                     "Bem vindo ao gestor de despesas mais sexy do ISEP\n" +  
@@ -15,7 +16,7 @@ public class Menu {
                     "2 - Sair."));  
             switch (opcao) {  
                 case 1:  
-                    //registardespesa();
+                    i.registardespesa();
                     JOptionPane.showMessageDialog(null, "A despesa foi registada");  
                     break;  
                 case 7:
