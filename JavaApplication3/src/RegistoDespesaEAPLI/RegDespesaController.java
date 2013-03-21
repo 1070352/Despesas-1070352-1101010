@@ -10,9 +10,11 @@ package RegistoDespesaEAPLI;
  */
 public class RegDespesaController {
     public boolean RegDespesaint(int Valor, String Desc){
-        while (Valor==0 || Desc==""){
+        while (Valor==0 || "".equals(Desc)){
             return false;
         }
         return true;
     }
+    
+    
 }

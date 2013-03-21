@@ -15,10 +15,12 @@ public class RegDespesaUI {
     public void registardespesa(){
          int val = Integer.parseInt(javax.swing.JOptionPane.showInputDialog(null, "Introduza um valor"));
          String desc = JOptionPane.showInputDialog(null, "Introduza uma descriçao");
+         Despesa d = new Despesa( val , desc);
          
-         i.RegDespesaint(val, desc);
-         
-         JOptionPane.showMessageDialog(null, "Registo Introduzido" + "Descriçao: " + desc +"Valor:" + val);
+         if ( i.RegDespesaint(val, desc) == false){
+            JOptionPane.showMessageDialog(null, "Erro");
+            }else
+            JOptionPane.showMessageDialog(null, "Registo Introduzido\n" + "Descriçao:\n" + d.getDesc() +"\nValor:\n" + d.getValor());     
     }
     
 }

@@ -35,4 +35,9 @@ public class Despesa {
     public void setDesc(String desc) {
         this.Desc = desc;
     }
+    
+    Despesa ( int v , String n){
+        Valor=v;
+        Desc=n;
+    }
 }
